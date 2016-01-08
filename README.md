@@ -1,7 +1,7 @@
 # ebird-js
 JS wrapper to the ebird API.
 
-[![Build Status](https://travis-ci.org/gregthebusker/ebird-js.svg)](https://travis-ci.org/gregthebusker/ebird-js)
+[![Build Status](https://travis-ci.org/ProjectBabbler/ebird-js.svg)](https://travis-ci.org/ProjectBabbler/ebird-js)
 
 [ebird 1.1 docs](https://confluence.cornell.edu/display/CLOISAPI/eBird+API+1.1)
 
