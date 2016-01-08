@@ -5,6 +5,8 @@ JS wrapper to the ebird API.
 
 [ebird 1.1 docs](https://confluence.cornell.edu/display/CLOISAPI/eBird+API+1.1)
 
+ebird-js is just a convenience library for interacting with the ebird 1.1 api.
+
 ## How to use
 
 ```
@@ -26,6 +28,11 @@ ebirds.obs.geo.recent(params).then((data) => {
     console.log(error);
 })
 ```
+
+## Default Params
+`fmt` defaults to `json`.
+
+All others see [ebird 1.1 docs](https://confluence.cornell.edu/display/CLOISAPI/eBird+API+1.1)
 
 ## Endpoints
 
