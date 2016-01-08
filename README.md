@@ -21,7 +21,7 @@ var params = {
     lat: '42.46',
 };
 
-ebirds.obs.geo.recent(params).then((data) => {
+ebird.obs.geo.recent(params).then((data) => {
     // An array of observations
     console.log(data);
 }).catch((error) => {
