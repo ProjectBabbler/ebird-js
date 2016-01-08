@@ -13,6 +13,10 @@ var standardGet = (path) => {
                 ...defaultParams,
                 ...params,
             },
+        }).then((response) => {
+            return response.data;
+        }).catch((response) => {
+            return response.data;
         });
     };
 };
