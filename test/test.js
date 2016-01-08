@@ -6,8 +6,8 @@ describe('ebird tests', () => {
 
     it('refs/taxa should return some results', (done) => {
         var ebird = require('../lib/index.js');
-        ebird.ref.taxa().then((response) => {
-            assert.equal(true, response.data.length > 0);
+        ebird.ref.taxa().then((data) => {
+            assert.equal(true, data.length > 0);
         }).catch((error) => {
             throw error;
         }).then(() => {
