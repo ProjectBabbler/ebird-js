@@ -98,7 +98,10 @@ var ebird = {
             geo: standardGet('/ref/hotspot/geo'),
         },
 
-        location: standardGet('/ref/location'),
+        location: (params) => {
+            var func = params.match ? standardGet('/ref/location/find') : standardGet('/ref/location/list');
+            return func(params);
+        }
     },
 };
 
