@@ -1,5 +1,11 @@
 var axios = require('axios');
 
+axios = axios.create({
+    headers: {
+        'Access-Control-Allow-Origin': '*',
+    }
+});
+
 var protocol =  window.location.protocol == 'https:' ? 'https:' : 'http:';
 var baseUrl = `${protocol}//ebird.org/ws1.1`
 var defaultParams = {
@@ -16,7 +22,7 @@ var standardGet = (path) => {
         }).then((response) => {
             return response.data;
         }).catch((response) => {
-            return response.data;
+            throw response.data;
         });
     };
 };
