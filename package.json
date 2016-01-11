@@ -1,6 +1,6 @@
 {
   "name": "ebird-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "JS library to interact with the ebird api",
   "main": "./src/index.js",
   "scripts": {
