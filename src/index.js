@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-var protocol =  window.location.protocol == 'https:' ? 'https:' : 'http:';
+var protocol = 'http:';
 var baseUrl = `${protocol}//ebird.org/ws1.1`
 var defaultParams = {
     fmt: 'json',
