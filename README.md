@@ -13,8 +13,8 @@ ebird-js is just a convenience library for interacting with the ebird 1.1 api.
 npm install --save ebird-js
 ```
 
-```
-var ebird = require(ebird-js);
+```js
+var ebird = require('ebird-js');
 
 var params = {
     lng: '-76.51',
@@ -43,7 +43,7 @@ This path contains data services.
 
 returns recent nearby observations
 
-```
+```js
     ebird.data.obs.geo.recent(params)
 ```
 
@@ -51,7 +51,7 @@ returns recent nearby observations
 
 returns recent nearby observations of a species
 
-```
+```js
     ebird.data.obs.geo_spp.recent(params)
 ```
 
@@ -59,7 +59,7 @@ returns recent nearby observations of a species
 
 returns recent observations at hotspots
 
-```
+```js
     ebird.data.obs.hotspot.recent(params)
 ```
 
@@ -67,7 +67,7 @@ returns recent observations at hotspots
 
 returns recent observations of a species at hotspots
 
-```
+```js
     ebird.data.obs.hotspot_spp.recent(params)
 ```
 
@@ -75,7 +75,7 @@ returns recent observations of a species at hotspots
 
 returns recent observations at locations
 
-```
+```js
     ebird.data.obs.loc.recent(params)
 ```
 
@@ -83,7 +83,7 @@ returns recent observations at locations
 
 returns recent observations of a species at locations
 
-```
+```js
     ebird.data.obs.loc_spp.recent(params)
 ```
 
@@ -91,7 +91,7 @@ returns recent observations of a species at locations
 
 returns recent observations in a region
 
-```
+```js
     ebird.data.obs.region.recent(params)
 ```
 
@@ -99,7 +99,7 @@ returns recent observations in a region
 
 returns recent observations of a species in a region
 
-```
+```js
     ebird.data.obs.region_spp.recent(params)
 ```
 
@@ -107,7 +107,7 @@ returns recent observations of a species in a region
 
 returns recent nearby notable observations
 
-```
+```js
     ebird.data.notable.geo.recent(params)
 ```
 
@@ -115,7 +115,7 @@ returns recent nearby notable observations
 
 returns recent notable observations at hotspots
 
-```
+```js
     ebird.data.notable.hotspot.recent(params)
 ```
 
@@ -123,7 +123,7 @@ returns recent notable observations at hotspots
 
 returns recent notable observations at locations
 
-```
+```js
     ebird.data.notable.loc.recent(params)
 ```
 
@@ -131,7 +131,7 @@ returns recent notable observations at locations
 
 returns recent notable observations in a region
 
-```
+```js
     ebird.data.notable.region.recent(params)
 ```
 
@@ -139,7 +139,7 @@ returns recent notable observations in a region
 
 returns nearest locations with observations of a species
 
-```
+```js
     ebird.data.nearest.geo_spp.recent(params)
 ```
 
@@ -151,7 +151,7 @@ This path contains products consisting of aggregated raw data.
 
 This service provides a summary of recent sightings for birding hotspots.
 
-```
+```js
     ebird.data.nearest.geo_spp.recent(params)
 ```
 
@@ -163,7 +163,7 @@ This path contains supporting lookup services for the /data and /product service
 
 returns species in the ebird taxonomy
 
-```
+```js
     ebird.ref.taxa(params)
 ```
 
@@ -171,7 +171,7 @@ returns species in the ebird taxonomy
 
 provides a list of eBird hotspots for a given region, optionally filtered to those with recent data
 
-```
+```js
     ebird.ref.hotspot.region(params)
 ```
 
@@ -179,13 +179,13 @@ provides a list of eBird hotspots for a given region, optionally filtered to tho
 
 provides a list of nearby eBird hotspots, optionally filtered to those with recent data
 
-```
+```js
     ebird.ref.hotspot.geo(params)
 ```
 
 #### ref.location
 
 returns location-based look-up data
-```
+```js
     ebird.ref.location(params)
 ```
