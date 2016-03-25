@@ -189,3 +189,25 @@ returns location-based look-up data
 ```js
     ebird.ref.location(params)
 ```
+
+#### ref.region
+
+Undocumented ebird api.
+```js
+params:
+    q: String to search on.  Required
+
+Example Response:
+    [
+        {
+            name: "United States (US)",
+            code: "US"
+        },
+        ...
+    ]
+```
+
+returns location name and code.
+```js
+    ebird.ref.region(params)
+```
