@@ -8,10 +8,10 @@ describe('ebird tests', () => {
         var ebird = require('../lib/index.js');
         ebird.ref.taxa().then((data) => {
             assert.equal(true, data.length > 0);
-        }).catch((error) => {
-            throw error;
-        }).then(() => {
             done();
+        }).catch((error) => {
+            console.log(error);
+            throw error;
         });
     });
 
@@ -20,11 +20,11 @@ describe('ebird tests', () => {
         ebird.ref.location({
             rtype: 'country',
         }).then((data) => {
-            assert.equal(252, data.length);
-        }).catch((error) => {
-            throw error;
-        }).then(() => {
+            assert.equal(251, data.length);
             done();
+        }).catch((error) => {
+            console.log(error);
+            throw error;
         });
     });
 
@@ -35,10 +35,10 @@ describe('ebird tests', () => {
             match: 'stan',
         }).then((data) => {
             assert.equal(8, data.length);
-        }).catch((error) => {
-            throw error;
-        }).then(() => {
             done();
+        }).catch((error) => {
+            console.log(error);
+            throw error;
         });
     });
 });
