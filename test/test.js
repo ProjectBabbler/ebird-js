@@ -20,7 +20,7 @@ describe('ebird tests', () => {
         ebird.ref.location({
             rtype: 'country',
         }).then((data) => {
-            assert.equal(251, data.length);
+            assert.equal(254, data.length);
             done();
         }).catch((error) => {
             console.log(error);
